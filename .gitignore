@@ -1,3 +1,4 @@
 client/node_modules/
 client/bundles/
 server/environment/
+server/__pycache__/

@@ -1,12 +1,12 @@
 from flask import Flask, render_template
 
 
-app = Flask(__name__, static_folder="../client/bundles", template_folder="../client/templates")
+app = Flask(__name__, static_folder="../client/static", template_folder="../client/templates")
 
 
 @app.route("/")
 def index():
-    return render_template("main.html")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":

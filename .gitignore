@@ -2,3 +2,5 @@ client/node_modules/
 client/bundles/
 server/environment/
 server/__pycache__/
+.DS_Store
+keys

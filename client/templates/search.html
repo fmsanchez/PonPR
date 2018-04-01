@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block scripts %}
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=KEY=places"></script>
+  <script type="text/javascript" src = "{{ url_for('static', filename = 'bundles/search.js') }}" defer></script>
+{% endblock %}
+{% block body %}
+  <div class="d-flex justify-content-center bg-light">
+    <div class="w-75 bg-white" id="content" />
+  </div>
+{% endblock %}

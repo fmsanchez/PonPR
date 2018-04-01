@@ -1,9 +1,10 @@
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 .index-bg {
-  background-image: url("/static/images/car-dudes.jpg");
+  background-image: url("/static/images/car-dude-girl.jpg");
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;

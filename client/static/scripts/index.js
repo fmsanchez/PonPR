@@ -5,6 +5,7 @@ function init() {
 }
 
 function initAutocompletes(data) {
+  console.log(google.maps.places);
   var fromInput = document.getElementById('from-input');
   var toInput = document.getElementById('to-input');
 
@@ -39,7 +40,7 @@ function initSearchButton(data) {
       return;
     }
     console.log('redirecting', data);
-    location.href = '/busqueda?de=' + data.fromId + '&a=' + data.toId;
+    window.location.href = '/busqueda?de=' + data.fromId + '&a=' + data.toId;
   });
 }
 

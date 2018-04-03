@@ -1,11 +1,14 @@
 from flask import Flask, render_template
-
+from secrets import add_secrets
 
 app = Flask(
     __name__,
     static_folder="../client/static",
     template_folder="../client/templates",
 )
+
+
+add_secrets(app)
 
 
 @app.route("/")

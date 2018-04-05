@@ -1,7 +1,5 @@
-// search.jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import Hello from "./Hello";
-import SearchForm from "./SearchForm";
+import SearchPage from "./SearchPage";
 
-ReactDOM.render(<SearchForm />, document.getElementById("content"));
+ReactDOM.render(<SearchPage />, document.getElementById("content"));

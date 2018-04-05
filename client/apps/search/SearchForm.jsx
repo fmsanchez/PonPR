@@ -12,7 +12,6 @@ export default class SearchForm extends React.Component {
       types: ['(cities)'],
       componentRestrictions: {country: 'pr'}
     };
-    console.log(google.maps.places);
     const fromAutocomplete = new window.google.maps.places.Autocomplete(
       this.fromRef.current,
       options,

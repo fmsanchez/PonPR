@@ -5,7 +5,6 @@ function init() {
 }
 
 function initAutocompletes(data) {
-  console.log(google.maps.places);
   var fromInput = document.getElementById('from-input');
   var toInput = document.getElementById('to-input');
 

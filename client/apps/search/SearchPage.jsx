@@ -2,14 +2,22 @@ import React from 'react';
 
 import SearchFilters from './SearchFilters';
 import SearchForm from './SearchForm';
+import SearchList from './SearchList';
 
 export default class SearchPage extends React.Component {
   render() {
     return (
       <div>
         <SearchForm />
-        <div className='row m-3'>
-          <SearchFilters />
+        <div className='container m-3'>
+          <div className='row'>
+            <div className='col-4'>
+              <SearchFilters />
+            </div>
+            <div className='col-8'>
+              <SearchList />
+            </div>
+          </div>
         </div>
       </div>
     );

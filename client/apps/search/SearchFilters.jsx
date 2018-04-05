@@ -34,7 +34,7 @@ export default class SearchFilters extends React.Component {
 
   render() {
     return (
-      <div className="p-3 bg-light w-25">
+      <div className="p-3 bg-light">
         <span>Hora de salida</span>
         <br />
         <span>{this.getTimeRangeText(this.state.timeRange)}</span>

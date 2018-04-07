@@ -7,6 +7,13 @@ export default class SearchList extends React.Component {
     return (
       <div className='mr-3'>
         <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
+        <SearchListItem />
       </div>
     );
   }

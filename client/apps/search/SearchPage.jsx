@@ -7,7 +7,7 @@ import SearchList from './SearchList';
 export default class SearchPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className='border-left border-right'>
         <SearchForm />
         <div className='container m-3'>
           <div className='row'>

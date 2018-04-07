@@ -9,7 +9,7 @@ const Range = Slider.Range;
 export default class SearchFilters extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {timeRange: [6, 18], priceRange: [0, 100]};
+    this.state = {timeRange: [6, 18], priceRange: [0, 100], sortValue: 1};
   }
 
   formatTime(num) {
@@ -34,11 +34,26 @@ export default class SearchFilters extends React.Component {
 
   render() {
     return (
-      <div className="p-3 bg-light">
+      <div className='rounded border p-3 bg-light'>
+        <div className='input-group mb-3'>
+          <div className='input-group-prepend'>
+            <label className='input-group-text'>Ordernar</label>
+          </div>
+          <select
+            value={this.state.sortValue}
+            onChange={event => this.setState({sortValue: event.target.value})}
+            className='custom-select'
+            >
+            <option value='1'>Precio: Menor &rarr; Mayor</option>
+            <option value='2'>Precio: Mayor &rarr; Menor</option>
+            <option value='3'>Salida: Temprano &rarr; Tarde</option>
+            <option value='4'>Salida: Tarde &rarr; Temprano</option>
+          </select>
+        </div>
         <span>Hora de salida</span>
         <br />
         <span>{this.getTimeRangeText(this.state.timeRange)}</span>
-        <form className="mt-2 mb-3">
+        <form className='mt-2 mb-3'>
           <Range
             min={0}
             max={24}
@@ -50,7 +65,7 @@ export default class SearchFilters extends React.Component {
         <span>Costo</span>
         <br />
         <span>{this.getPriceRangeText(this.state.priceRange)}</span>
-        <form className="mt-2">
+        <form className='mt-2'>
           <Range
             min={0}
             max={100}

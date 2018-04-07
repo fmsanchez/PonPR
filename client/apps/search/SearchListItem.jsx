@@ -3,7 +3,7 @@ import React from 'react';
 export default class SearchListItem extends React.Component {
   render() {
     return (
-      <div className='container border rounded p-2'>
+      <div className='container border rounded clickable-item p-2 mb-2'>
         <div className='row justify-content-start'>
           <div className='col-auto pr-2'>
             <img
@@ -22,9 +22,9 @@ export default class SearchListItem extends React.Component {
           </div>
           <div className='col'>
             <p className='h5 p-0 m-0'>Mañana - 1:00pm</p>
-            <p className='h6 text-muted'>Mayagüez -> San Juan</p>
-            <p className='p-0 m-0'>Salida: <small>UPR Mayagüez</small></p>
-            <p className='p-0 m-0'>Llegada: <small>Plaza Las Americas</small></p>
+            <p className='h6 text-muted'>Mayagüez &rarr; San Juan</p>
+            <p className='p-0 m-0'>Salida: <small className='text-muted'>UPR Mayagüez</small></p>
+            <p className='p-0 m-0'>Llegada: <small className='text-muted'>Plaza Las Americas</small></p>
           </div>
           <div className='col-auto float-right border-left'>
             <p className='h3'>$20.00 <small className='text-muted'>p.p.</small></p>

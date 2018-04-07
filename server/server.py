@@ -21,5 +21,10 @@ def search():
     return render_template("search.html")
 
 
+@app.route("/viaje")
+def trip():
+    return render_template("trip.html")
+
+
 if __name__ == "__main__":
     app.run()

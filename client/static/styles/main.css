@@ -10,3 +10,8 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.clickable-item:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}

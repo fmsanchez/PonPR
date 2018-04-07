@@ -38,6 +38,8 @@
     ]
   },
   "dependencies": {
-    "rc-slider": "^8.6.1"
+    "moment": "^2.22.0",
+    "rc-slider": "^8.6.1",
+    "react-datepicker": "^1.4.1"
   }
 }

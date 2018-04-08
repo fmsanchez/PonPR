@@ -28,7 +28,7 @@ export default class SearchListItem extends React.Component {
           </div>
           <div className='col-auto float-right border-left'>
             <p className='h3'>$20.00 <small className='text-muted'>p.p.</small></p>
-            <p className='h5 p-0 m-0'>2 <small className='text-muted'>espacios disponibles</small></p>
+            <p className='h5 p-0 m-0'>2 <small className='text-muted'>asientos disponibles</small></p>
           </div>
         </div>
       </div>

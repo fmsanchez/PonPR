@@ -15,3 +15,11 @@ body, html {
   background-color: #f5f5f5;
   cursor: pointer;
 }
+
+.col-fixed-124 {
+  width: 124px;
+}
+
+.col-fixed-340 {
+  width: 340px;
+}

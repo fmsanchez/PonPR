@@ -1,9 +1,12 @@
 const webpack = require('webpack');
 const config = {
-    entry:  __dirname + '/apps/search/search.jsx',
+    entry:  {
+      search: __dirname + '/apps/search/search.jsx',
+      trip: __dirname + '/apps/trip/trip.jsx',
+    },
     output: {
         path: __dirname + '/static/bundles',
-        filename: 'search.js',
+        filename: '[name].js',
     },
     resolve: {
         extensions: ['.js', '.jsx', '.css']

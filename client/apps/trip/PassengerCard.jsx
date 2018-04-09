@@ -2,10 +2,10 @@ import React from 'react'
 
 export default class PassengerCard extends React.Component {
   render() {
-    if (this.props.user) {
+    if (!this.props.user) {
       return (
         <div
-          className='p-2 border-right d-flex flex-column col-fixed-124 align-items-center'
+          className='p-2 border-right d-flex flex-column col-fixed-124 bg-light'
         />
       );
     }

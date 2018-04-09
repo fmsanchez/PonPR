@@ -26,5 +26,10 @@ def trip():
     return render_template("trip.html")
 
 
+@app.route("/publicar")
+def publish():
+    return render_template("publish.html")
+
+
 if __name__ == "__main__":
     app.run()

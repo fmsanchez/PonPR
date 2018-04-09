@@ -16,10 +16,22 @@ body, html {
   cursor: pointer;
 }
 
+.col-fixed-72 {
+  width: 72px;
+}
+
+.col-fixed-104 {
+  width: 104px;
+}
+
 .col-fixed-124 {
   width: 124px;
 }
 
 .col-fixed-340 {
   width: 340px;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }

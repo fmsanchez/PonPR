@@ -35,3 +35,8 @@ body, html {
 .no-wrap {
   white-space: nowrap;
 }
+
+.map-publish {
+  height: 550px;
+  width: 550px;
+}

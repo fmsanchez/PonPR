@@ -6,18 +6,37 @@ import PublishCost from './PublishCost';
 import PublishMap from './PublishMap';
 
 export default class PublishPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {fromPlace: undefined, toPlace: undefined};
+    this.onChangeFrom = this.onChangeFrom.bind(this);
+    this.onChangeTo = this.onChangeTo.bind(this);
+  }
+
+  onChangeFrom(place) {
+    this.setState({fromPlace: place});
+  }
+
+  onChangeTo(place) {
+    this.setState({toPlace: place});
+  }
+
   render() {
     return (
       <div className='border-left border-right p-3'>
         <p className='h3 mb-3'>Pubicar Viaje</p>
         <div className='d-flex flex-row'>
           <div className='d-flex flex-column col p-0 ml-0 mr-3'>
-            <PublishRoute />
+            <PublishRoute
+              onChangeFrom={this.onChangeFrom}
+              onChangeTo={this.onChangeTo}
+              places={{from: this.state.fromPlace, to: this.state.toPlace}}
+            />
             <PublishTime />
             <PublishCost />
           </div>
           <div className='d-flex flex-column ml-3'>
-            <PublishMap />
+            <PublishMap places={{from: this.state.fromPlace, to: this.state.toPlace}} />
           </div>
         </div>
       </div>

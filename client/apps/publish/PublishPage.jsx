@@ -14,10 +14,16 @@ export default class PublishPage extends React.Component {
   }
 
   onChangeFrom(place) {
+    if (!place || !place.name) {
+      return;
+    }
     this.setState({fromPlace: place});
   }
 
   onChangeTo(place) {
+    if (!place || !place.name) {
+      return;
+    }
     this.setState({toPlace: place});
   }
 

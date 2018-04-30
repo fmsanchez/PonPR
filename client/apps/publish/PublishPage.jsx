@@ -4,6 +4,7 @@ import PublishRoute from './PublishRoute';
 import PublishTime from './PublishTime';
 import PublishCost from './PublishCost';
 import PublishMap from './PublishMap';
+import PublishDescription from './PublishDescription';
 
 export default class PublishPage extends React.Component {
   constructor(props) {
@@ -38,6 +39,7 @@ export default class PublishPage extends React.Component {
               onChangeTo={this.onChangeTo}
               places={{from: this.state.fromPlace, to: this.state.toPlace}}
             />
+            <PublishDescription />
             <PublishTime />
             <PublishCost />
           </div>

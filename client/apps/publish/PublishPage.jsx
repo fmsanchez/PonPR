@@ -42,6 +42,7 @@ export default class PublishPage extends React.Component {
             <PublishDescription />
             <PublishTime />
             <PublishCost />
+            <button class="btn btn-primary">Publicar</button>
           </div>
           <div className='d-flex flex-column ml-3'>
             <PublishMap places={{from: this.state.fromPlace, to: this.state.toPlace}} />
